@@ -1,0 +1,7 @@
+# EXCLUDING FILES
+
+# Extern library
+
+extern/
+
+.phpintel/

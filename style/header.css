@@ -1,0 +1,13 @@
+header{
+	padding:1em;
+	box-sizing: border-box;
+}
+
+
+header .social_media > i{
+	padding:.1em .25em;
+	font-size: 1.1em;
+	width:1.2em;
+	height: 1.2em;
+	text-align:center;
+}

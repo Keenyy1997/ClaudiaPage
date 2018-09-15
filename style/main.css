@@ -1,0 +1,309 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	--primary:#E4BD80;
+	--secondary:#CD9242;
+	--tertiary:#000;
+	--danger:#DA4F43;
+	--black:#3E3B36;
+	--blackAlt:#000;
+	--white:#FFFFFE;
+	--sValue:8.33%;
+	--default: #555;
+	color:var(--default);
+
+	/*----*/
+	--title:4em;
+	--subtitle:2em;
+	--large:1.5em;
+	--medium:1.2em;
+	--regular:1em;
+	--small:.7em;
+
+	/*Fonts*/
+
+	--titleFont:"Slabo 27px";
+	--subtitleFont:"Lato";
+	--textFont:"Lato";
+	
+}
+
+.TitleSize{
+	font-size: var(--title);
+}
+.SubTitleSize{
+	font-size: var(--subtitle);
+}
+.LargeSize{
+	font-size: var(--large);
+}
+.MediumSize{
+	font-size: var(--medium);
+}
+.SmallSize{
+	font-size: var(--small);
+}
+
+.Text{
+	font-family: var(--textFont);
+	/*font-size: var(--regular);*/
+}
+.SubTitle{
+	font-family: var(--subtitleFont);
+	font-size: var(--medium);
+}
+.Justify{
+	text-align: justify-all;
+}
+
+.Align-Center{
+	text-align:center;
+}
+.Align-Left{
+	text-align:left;
+}
+.Align-Right{
+	text-align: right;
+}
+
+/*COLOR STUFF*/
+.PrimaryColor{
+	color: var(--primary);
+}
+.SecondaryColor{
+	color: var(--secondary);
+}
+.TertiaryColor{
+	color: var(--tertiary);
+}
+.DangerColor{
+	color: var(--danger);
+}
+.WhiteColor{
+	color: var(--white);
+}
+.BlackColor{
+	color: var(--black);
+}
+.BlackAltColor{
+	color: var(--blackAlt);
+}
+.PrimaryBackground{
+	background: var(--primary);
+}
+.SecondaryBackground{
+	background: var(--secondary);
+}
+.TertiaryBackground{
+	background: var(--tertiary);
+}
+.WhiteBackground{
+	background: var(--white);
+}
+.BlackBackground{
+	background: var(--black);
+}
+.BlackAltBackground{
+	background: var(--blackAlt);
+}
+/*GRID SYSTEM*/
+
+.container{
+	width:100%;
+	margin:auto;
+	max-width: 1200px;
+}
+
+.container-fluid{
+	width:100%;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.s1{
+	width: calc(var(--sValue) * 1);
+}
+.s2{
+	width: calc(var(--sValue) * 2);
+}
+.s3{
+	width: calc(var(--sValue) * 3);
+}
+.s4{
+	width: calc(var(--sValue) * 4);
+}
+.s5{
+	width: calc(var(--sValue) * 5);
+}
+.s6{
+	width: calc(var(--sValue) * 6);
+}
+.s7{
+	width: calc(var(--sValue) * 7);
+}
+.s8{
+	width: calc(var(--sValue) * 8);
+}
+.s9{
+	width: calc(var(--sValue) * 9);
+}
+.s10{
+	width: calc(var(--sValue) * 10);
+}
+.s11{
+	width: calc(var(--sValue) * 11);
+}
+.s12{
+	width: calc(var(--sValue) * 12);
+}
+/*OFFSET*/
+.offset-s1{
+	margin-left: calc(var(--sValue) * 1);
+}
+.offset-s2{
+	margin-left: calc(var(--sValue) * 2);
+}
+.offset-s3{
+	margin-left: calc(var(--sValue) * 3);
+}
+.offset-s4{
+	margin-left: calc(var(--sValue) * 4);
+}
+.offset-s5{
+	margin-left: calc(var(--sValue) * 5);
+}
+.offset-s6{
+	margin-left: calc(var(--sValue) * 6);
+}
+.offset-s7{
+	margin-left: calc(var(--sValue) * 7);
+}
+.offset-s8{
+	margin-left: calc(var(--sValue) * 8);
+}
+.offset-s9{
+	margin-left: calc(var(--sValue) * 9);
+}
+.offset-s10{
+	margin-left: calc(var(--sValue) * 10);
+}
+.offset-s11{
+	margin-left: calc(var(--sValue) * 11);
+}
+.offset-s12{
+	margin-left: calc(var(--sValue) * 12);
+}
+.offset-auto{
+	margin:auto;
+}
+
+.button{
+	padding:.5em 1.5em;
+}
+
+.valign{
+	vertical-align: center;
+	align-self: center;
+}
+
+
+body{
+	background:var(--black);
+}
+
+/*MAIN PHOTO*/
+.MainPhoto
+{
+	position: absolute;
+	left:50%;
+	top:0;
+	width:100%;
+	max-width: 1400px;
+	max-height: 1080px;
+	transform: translate(-50%,0%);
+	height: auto;	
+	z-index: -1;
+}
+.MainPhoto > img
+{
+	width:100%;
+	object-fit: cover;
+}
+.MainPhoto::before
+{
+	content:"";
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+}
+
+
+/*Welcome*/
+
+.Welcome{
+	padding:100px 30px 230px 30px;
+	position: relative;
+}
+.BorderWelcome::before{
+	content:"";
+	position: absolute;
+	bottom: 30px;
+	left:30px;
+	width:70px;
+	border:2px solid var(--primary);
+}
+
+.Wallpaper{
+	position: absolute;
+	left:0;
+	top:0;
+	height: 100%;
+	overflow:hidden;
+	z-index: -1;
+}
+.Wallpaper > img{
+	width:100%;
+	height: auto;
+}
+
+.Title{
+	font-family: var(--titleFont);
+	font-size: var(--title);
+	text-transform: uppercase;
+}
+.SubTitle{
+	font-family: var(--subtitleFont);
+	font-size: var(--subtitle);
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.Bold{
+	font-weight: bold;
+}
+.Bolder{
+	font-weight: 800;
+}
+.Upper{
+	text-transform: uppercase;
+}
+.ListDecoration{
+	text-decoration: none;
+	list-style: none;
+}
+
+
+/*CAROUSEL*/
+
+.Carousel .Item > img
+{
+	width:100%;
+}

@@ -1,0 +1,22 @@
+/*NAVIGATION BAR*/
+
+nav.container-fluid{
+	padding:1em;
+	box-sizing: border-box;
+}
+nav .Menu > li
+{
+	list-style: none;
+}
+
+nav .Menu > li > a{
+	text-decoration: none;
+	color: var(--white);
+	text-transform: uppercase;
+	font-family: "Roboto";
+	transition: .15s ease;
+}
+
+nav .Menu > li > a:hover{
+	color:var(--primary);
+}
